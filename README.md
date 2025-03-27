@@ -39,6 +39,7 @@ Build the JAR file using Maven:
 mvn package
 
 Navigate to the project directory and run:
+
 project directory - cd C:\Users\Win10\DigitalLibrary
 
 run - java -jar DigitalLibrary-1.0-SNAPSHOT.jar
