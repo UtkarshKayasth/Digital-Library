@@ -21,7 +21,7 @@ The Digital Library Book Management System is a Java-based console application d
 2. Navigate to the project directory:
    ```bash
    cd DigitalLibrary
-3. Compile the project using Maven
+3. Compile the project using Maven :
    mvn compile
 4. Run the application :
    java -cp target/classes library.ui.LibraryApp
