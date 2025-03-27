@@ -23,13 +23,34 @@ The Digital Library Book Management System is a Java-based console application d
    cd DigitalLibrary
 3. Compile the project using Maven
    mvn compile
-4. Run the application
+4. Run the application :
    java -cp target/classes library.ui.LibraryApp
 
    Running Tests:
    To run the unit tests, use the following command:
    mvn test
+   
+##Running the JAR File
 
+After building the project, you can run it as a JAR file:
+
+Build the JAR file using Maven:
+mvn package
+
+Navigate to the project directory and run:
+project directory - cd C:\Users\Win10\DigitalLibrary
+run - java -jar DigitalLibrary-1.0-SNAPSHOT.jar
+
+Example Output:
+Welcome to the Digital Library System
+
+1) Add Book  
+2) View Books  
+3) Search Book  
+4) Update Book  
+5) Delete Book  
+6) Exit  
+Choose an option:
 
 Challenges Faced:
 1. Handling Edge Cases:
@@ -88,4 +109,4 @@ DigitalLibrary/
 
 Author:
 UTKARSH KAYASTH
-utkarshkayasth485@gmail.com
+Email: utkarshkayasth485@gmail.com
