@@ -34,17 +34,18 @@ The Digital Library Book Management System is a Java-based console application d
 
 After building the project, you can run it as a JAR file:
 
-Build the JAR file using Maven:
+#Build the JAR file using Maven:
 
 mvn package
 
-Navigate to the project directory and run:
+#Navigate to the project directory and run:
 
 project directory - cd C:\Users\Win10\DigitalLibrary
 
 run - java -jar DigitalLibrary-1.0-SNAPSHOT.jar
 
-Example Output:
+#Example Output:
+
 Welcome to the Digital Library System
 
 1) Add Book  
