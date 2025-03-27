@@ -12,8 +12,9 @@ The Digital Library Book Management System is a Java-based console application d
 - **Exit the System**: Close the application.
 
 ## Setup and Run Instructions
+
 ### Prerequisites
-- Java 14 or higher installed on your system.
+- Java 14 or higher is installed on your system.
 - Maven 3.6 or higher installed.
 
 ### Steps to Run the Application
@@ -21,31 +22,39 @@ The Digital Library Book Management System is a Java-based console application d
 2. Navigate to the project directory:
    ```bash
    cd DigitalLibrary
-3. Compile the project using Maven :
+   ```
+3. Compile the project using Maven:
+   ```bash
    mvn compile
-4. Run the application :
+   ```
+4. Run the application:
+   ```bash
    java -cp target/classes library.ui.LibraryApp
+   ```
 
-   Running Tests:
-   To run the unit tests, use the following command:
-   mvn test
-   
-##Running the JAR File
+### Running Tests
+To run the unit tests, use the following command:
+```bash
+mvn test
+```
 
+### Running the JAR File
 After building the project, you can run it as a JAR file:
+1. Build the JAR file using Maven:
+   ```bash
+   mvn package
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd C:\Users\Win10\DigitalLibrary
+   ```
+3. Run the JAR file:
+   ```bash
+   java -jar DigitalLibrary-1.0-SNAPSHOT.jar
+   ```
 
-#Build the JAR file using Maven:
-
-mvn package
-
-#Navigate to the project directory and run:
-
-project directory - cd C:\Users\Win10\DigitalLibrary
-
-run - java -jar DigitalLibrary-1.0-SNAPSHOT.jar
-
-#Example Output:
-
+### Example Output
+```bash
 Welcome to the Digital Library System
 
 1) Add Book  
@@ -54,40 +63,40 @@ Welcome to the Digital Library System
 4) Update Book  
 5) Delete Book  
 6) Exit  
+
 Choose an option:
+```
 
-Challenges Faced:
-1. Handling Edge Cases:
+## Challenges Faced
 
--Ensuring that duplicate Book IDs are not allowed.
--Validating non-empty Title and Author fields.
--Restricting Availability Status to "Available" or "Checked Out."
+### Handling Edge Cases
+- Ensuring that duplicate Book IDs are not allowed.
+- Validating non-empty Title and Author fields.
+- Restricting Availability Status to "Available" or "Checked Out."
 
-2. Designing a Modular System:
+### Designing a Modular System
+- Separating business logic (`LibraryService`) from user interaction (`LibraryApp`).
+- Ensuring the system is scalable for future enhancements.
 
--Separating business logic (LibraryService) from user interaction (LibraryApp).
--Ensuring the system is scalable for future enhancements.
+### Error Handling
+- Implementing custom exceptions (`InvalidBookOperationException`) for better error reporting.
 
-3. Error Handling:
+## Improvements for the Future
 
--Implementing custom exceptions (InvalidBookOperationException) for better error reporting.
+### Persistence
+- Add a database or file-based storage to save books permanently.
 
+### Enhanced Search
+- Implement partial matching for Title searches.
 
-Improvements for the Future:
+### User Interface
+- Replace the console-based UI with a graphical user interface (GUI) or a web-based interface.
 
-1. Persistence:
--Add a database or file-based storage to save books permanently.
+### Additional Features
+- Add support for managing multiple users or borrowing/returning books.
 
-2. Enhanced Search:
--Implement partial matching for Title searches.
-
-3. User Interface:
--Replace the console-based UI with a graphical user interface (GUI) or a web-based interface.
-
-4. Additional Features:
--Add support for managing multiple users or borrowing/returning books.
-
-Directory Structure:
+## Directory Structure
+```
 DigitalLibrary/
 ├── pom.xml
 ├── README.md
@@ -108,9 +117,10 @@ DigitalLibrary/
 │   │   │   ├── library/
 │   │   │   │   ├── tests/
 │   │   │   │   │   ├── LibraryServiceTest.java
-                    ├── LibraryServiceUnitTest.java
+│   │   │   │   │   ├── LibraryServiceUnitTest.java
+```
 
-
-Author:
-UTKARSH KAYASTH
+## Author
+**Utkarsh Kayasth**  
 Email: utkarshkayasth485@gmail.com
+
